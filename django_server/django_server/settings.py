@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
 
     'api',
+    'assesment',
+    'attempt',
 ]
 
 MIDDLEWARE = [
@@ -154,6 +156,6 @@ REST_FRAMEWORK = {
 
 SIMPLE_JWT = {
     "AUTH_HEADER_TYPES": ["Bearer"],
-    "ACCESS_TOKEN_LIFETIME": datetime.timedelta(seconds=30), # minutes=5
-    "REFRESH_TOKEN_LIFETIME": datetime.timedelta(minutes=1), # days=1
+    "ACCESS_TOKEN_LIFETIME": datetime.timedelta(minutes=50), # minutes=5
+    "REFRESH_TOKEN_LIFETIME": datetime.timedelta(days=1), # days=1
 }
